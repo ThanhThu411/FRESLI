@@ -580,6 +580,11 @@ header {
     font-size: 40px;
     font-weight: 600;
     font-style: italic;
+    margin-right: 50px;
+}
+
+.sale-img {
+    right: -60px;
 }
 
 .sale-title span {
@@ -598,6 +603,7 @@ header {
     gap: 40px;
     margin-top: -40px;
     position: relative;
+    right: -40px;
 }
 
 .sale-right-item .daucong {
