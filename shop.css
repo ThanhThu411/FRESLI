@@ -1,0 +1,375 @@
+body {
+    background: #FFF8E3;
+}
+.navbar {
+    position: static;
+    background-color: #FFF8E3 !important;
+}
+
+.nav-link {
+    color: #2E4C18;
+}
+
+.header-shop-txt {
+    background: linear-gradient(90deg, rgba(225, 239, 151, 0.00) 0%, #E1EF97 100%), #2E4C18;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 14px 0;
+    text-align: left;
+}
+
+.shop-banner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-banner-item {
+    width: 33.33%;
+    height: 650px;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    text-align: center;
+}
+
+.shop-banner-item1 {
+    background-image: url(../images/shop-banner-yellow.png);
+}
+
+.shop-banner-item2 {
+    background-image: url(../images/shop-banner-red.png);
+}
+
+.shop-banner-item3 {
+    background-image: url(../images/shop-banner-green.png);
+}
+.header-shop-txt {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.shop-banner-item .txt{
+    color: #FFF8E3;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    top: 138px;
+    z-index: 1;
+    transition: .5s;
+}
+.shop-banner-item .chanh{
+    position: absolute;
+    width: 276px;
+    height: auto;
+    top: 210px;
+    text-align: center;
+    z-index: 1;
+    left:100px;
+    transition: .5s;
+}
+.shop-banner-item .rau{
+    position: absolute;
+    width: 373px;
+    height: auto;
+    top: 210px;
+    text-align: center;
+    z-index: 1;
+    left: 40px;
+    transition: .5s;
+}
+.shop-banner-item .dau1{
+    position: absolute;
+    width: 273px;
+    height: auto;
+    top: 144px;
+    text-align: center;
+    z-index: 1;
+    left: 30px;
+    transition: .5s;
+}
+.shop-banner-item .dau2{
+    position: absolute;
+    width: 273px;
+    height: auto;
+    top: 265px;
+    text-align: center;
+    z-index: 1;
+    right: 30px;
+    transition: .5s;
+}
+
+.shop-banner-item .nuoc-uong{
+    width: 316px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    right: 3%;
+    z-index: 3;
+    transition: .5s;
+}
+.shop-banner-item:hover .nuoc-uong{
+    scale: 1.1;
+}
+.shop-banner-item:hover .chanh,
+.shop-banner-item:hover .rau,
+.shop-banner-item:hover .dau1,
+.shop-banner-item:hover .dau2{
+    scale: 1.4;
+}
+.shop-banner-item:hover .txt{
+    top: 0;
+}
+
+.shop-jucies {
+    background-image: url(../images/shop-juices.png);
+    height: 165px;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-jucies .txt {
+    color: #2E4C18;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 27px;
+    width: 720px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-water-category {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 27px;
+    margin: 42px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border-radius: 27px;
+}
+.shop-water-item img{
+    border-radius: 27px;
+}
+.shop-water-item .txt{
+    cursor: pointer;
+    border-radius: 27px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF8E3;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: grid;
+    align-items: end;
+    padding-bottom: 10px;
+    background: linear-gradient(180deg, rgba(225, 239, 151, 0.00) 0%, #2E4C18 100%);
+    transition: .5s;
+}
+.shop-water-item .txt:hover{
+    background: linear-gradient(180deg, rgba(219, 235, 141, 0) 0%, #FFF8E3 100%);
+    color: #2E4C18;
+}
+.shop-water-row {
+    display: grid;
+    grid-template-columns: 265px 1fr;
+    gap: 24px;
+}
+.shop-water-filter {
+    background: #FFF;
+    padding: 26px 0;
+box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.text-20 {
+    color: #2E4C18;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.text-12 {
+    color: #2E4C18;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.checkboxcustom {
+    margin-left: 30px;
+}
+.checkboxcustom input {
+    border-radius: 4px;
+background: #D9D9D9;
+width: 18px;
+height: 18px;
+}
+.shop-water-lst {
+    background: #FFF;
+    padding: 26px 0;
+box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+height: 835px;
+overflow: auto;
+}
+.shop-water-lst .new {
+    display: flex;
+width: 142px;
+height: 39px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 40px;
+background: #7BD063;
+font-weight: 800;
+font-size: 18px;
+color: #fff;
+margin-left: 20px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shop-shadow {
+    border-radius: 20px;
+background: #FFF;
+box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.14);
+}
+.py-40 {
+    padding: 0 40px;
+}
+.ginger-shop {
+    width: 325px;
+    padding: 15px;
+    margin-top: 40px;
+}
+.shop-cart {
+    display: inline-block;
+    background: #2E4C18;
+    color: #FFF8E3;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2px 20px;
+    border-radius: 40px;
+}
+.shop-water-combo-border {
+    height: 42px;
+    width: 100%;
+    background-color: #FFF8E3;
+}
+.nuoceple-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.nuoceple-img {
+    margin-top: -88px !important;
+    text-align: center;
+    margin: auto;
+    padding-left: 20px;
+}
+.nuoceple-item {
+    margin-top: 120px;
+}
+.sum {
+    border-radius: 40px;
+border: 1px solid #2E4C18;
+padding: 6px;
+color: #2E4C18;
+
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+width: 50px;
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+
+@media screen and (max-width: 1140px) {
+    .shop-banner-item .rau,
+    .shop-banner-item .dau1,
+    .shop-banner-item .dau2,
+    .shop-banner-item .chanh,
+    .shop-banner-item .txt {
+        display: none;
+    }
+    
+    .shop-banner-item .nuoc-uong {
+        width: 80%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 991px) {
+    .shop-banner-item {
+        height: 450px;
+    }
+    .nuoceple-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .shop-banner-item {
+        height: 300px;
+    }
+    .shop-water-row {
+        display: block;
+    }
+    .nuoceple-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .shop-jucies .txt {
+        width: 200px;
+        font-size: 20px;
+    }
+    .ginger-shop {
+        width: 100%;
+    }
+    .shop-water-filter {
+        border-bottom: 20px solid #FFF8E3;
+    }
+    .shop-water-category {
+        display: block;
+    }
+    .shop-water-item {
+        margin-top: 20px;
+    }
+}
