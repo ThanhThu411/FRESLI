@@ -141,12 +141,14 @@ function handlePink(name) {
       nlSrc1: "images/apple.png",
       nlSrc2: "images/nghe.png",
       nlSrc3: "images/gung.png",
-      nlSrc4: "images/taoxanh.png", // Thêm phần tử nguyên liệu mới
       title: "RED 3",
       bg: "#E35353",
       price: "55.000",
     },
   };
+
+  newImg.id = "pink-banner"; // Giữ nguyên ID để thay thế chính xác
+  banner.replaceWith(newImg); // Thay thế ảnh cũ bằng ảnh mới
 
   // Kiểm tra nếu name hợp lệ
   const selectedData = data[name];
@@ -162,31 +164,8 @@ function handlePink(name) {
   title.innerText = selectedData.title;
   title.style.background = selectedData.bg;
   price.innerText = selectedData.price;
-
-  // Xóa phần tử nguyên liệu mới nếu không phải là pink3
-  const existingNewIngredient = document.getElementById("nguyenlieured4-container");
-  if (existingNewIngredient) {
-    existingNewIngredient.remove();
-  }
-
-  // Thêm phần tử nguyên liệu mới nếu là pink3
-  if (name === "pink3") {
-    const newIngredient = document.createElement("div");
-    newIngredient.className = "rl-r-b-col";
-    newIngredient.id = "nguyenlieured4-container";
-    newIngredient.innerHTML = `
-      <div class="rl-r-b-item position-relative">
-        <img src="images/rl-1.png" />
-        <div class="label">Táo xanh</div>
-        <div class="value">Yellow là dòng nước ép chiết xuất từ các loại trái cây và rau củ như cà rốt, dứa</div>
-        <div class="text-end">
-          <img id="nguyenlieured4" src="${selectedData.nlSrc4}" />
-        </div>
-      </div>
-    `;
-    document.querySelector(".rl-r-b-row").appendChild(newIngredient);
-  }
 }
+
 function handleGreen(name) {
   const banner = document.getElementById("green-banner");
   const numberImg = document.getElementById("xanh-number");

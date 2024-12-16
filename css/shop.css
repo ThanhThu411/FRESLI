@@ -39,15 +39,15 @@ body {
 }
 
 .shop-banner-item1 {
-    background-image: url(../imagesshop/shop-banner-yellow.png);
+    background-image: url(../images/shop-banner-yellow.png);
 }
 
 .shop-banner-item2 {
-    background-image: url(../imagesshop/shop-banner-red.png);
+    background-image: url(../images/shop-banner-red.png);
 }
 
 .shop-banner-item3 {
-    background-image: url(../imagesshop/shop-banner-green.png);
+    background-image: url(../images/shop-banner-green.png);
 }
 .header-shop-txt {
     position: absolute;
@@ -313,55 +313,11 @@ line-height: normal;
 text-transform: uppercase;
 width: 50px;
 }
-
-@media screen and (min-width: 992px) {
-    .navbar-nav {
-      position: relative;
-      z-index: 99;
-    }
-    
-    .nav-link {
-      display: inline-block;
-    }
-  }
-
 @media screen and (min-width: 1200px) {
     .container {
         width: 1440px;
     }
-    .scrolling-text-container {
-        display: flex;
-        width: fit-content;
-        animation: scroll 20s linear infinite;
-      }
-  
-      .scrolling-text {
-        white-space: nowrap;
-        color: white;
-        font-size: 16px;
-        padding-right: 50px;
-      }
-  
-      .scrolling-text-container {
-        display: flex;
-      }
-  
-      .scrolling-text:nth-child(1) { opacity: 1; }
-      .scrolling-text:nth-child(2) { opacity: 1; }
-      .scrolling-text:nth-child(3) { opacity: 1; }
-      .scrolling-text:nth-child(4) { opacity: 1; }
-  
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    
 }
-
 
 
 @media screen and (max-width: 1140px) {

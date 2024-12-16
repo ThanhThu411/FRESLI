@@ -272,10 +272,11 @@ border: 1px solid rgba(0, 0, 0, 0.10);
         height: auto;
         top: 255px;
         top: inherit;
+        display: none;
     }
     .shop-detail-xanh-to {
-        width: 255%;
-        right: 0;
+        width: 255px;
+        right: 10px;
         height: auto;
         top: 215px;
         top: inherit;
