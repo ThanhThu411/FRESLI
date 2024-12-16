@@ -38,7 +38,12 @@ body {
     padding: 5px 30px;
     display: block;
 }
-
+.banner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 800px 1fr;
+    padding-top: 10%;
+}
 .banner-img {
     width: 727px;
     height: 631px;
@@ -156,8 +161,8 @@ body {
         width: 1440px;
     }
     .banner {
-        max-width: 1080px;
-        align-items: center;
+       max-width: 1080px;
+    align-items: center;
     }
  
    
@@ -908,34 +913,3 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
-
-  .scrolling-text-container {
-    display: flex;
-    width: fit-content;
-    animation: scroll 20s linear infinite;
-  }
-
-  .scrolling-text {
-    white-space: nowrap;
-    color: white;
-    font-size: 16px;
-    padding-right: 50px;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .scrolling-text {
-      font-size: 14px;
-
-    }
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }

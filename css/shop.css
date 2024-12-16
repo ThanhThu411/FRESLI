@@ -375,10 +375,16 @@ width: 50px;
 }
 .banner {
     width: 100%;
+
+    padding: 12px 0;
+  }
+  .banner1 {
+    width: 100%;
+    overflow: hidden;
     padding: 12px 0;
   }
 
-.scrolling-text-container {
+  .scrolling-text-container {
     display: flex;
     width: fit-content;
     animation: scroll 20s linear infinite;
@@ -387,17 +393,10 @@ width: 50px;
   .scrolling-text {
     white-space: nowrap;
     color: white;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     padding-right: 50px;
   }
-  .scrolling-text-container {
-    display: flex;
-
-.scrolling-text:nth-child(1) { opacity: 1; }
-.scrolling-text:nth-child(2) { opacity: 1; }
-.scrolling-text:nth-child(3) { opacity: 1; }
-.scrolling-text:nth-child(4) { opacity: 1; }
-
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
