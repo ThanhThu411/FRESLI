@@ -107,28 +107,30 @@ font-weight: 600;
 line-height: normal;
 }
 
-.pineapple {
+.traicay {
     position: absolute;
     top: 30%;
     right: 20%;
     z-index: 1;
 }
 
-.pineapple {
+.traicay {
     position: absolute;
     top: 10%;
     right: 10%;
     z-index: 1;
     height: 485px;
-    width: 485px;
+    width: auto;
 }
-.shop-detail-xanh-to {
+
+
+.shop-detail-to {
     position: absolute;
     top: 10%;
     right: 0;
     z-index: 1;
-    width: 317px;
     height: 488px;
+    width: auto;
 }
 
 .shop-detail-review {
@@ -265,7 +267,7 @@ border: 1px solid rgba(0, 0, 0, 0.10);
     .uudai {
         font-size: 20px;
     }
-    .pineapple {
+    .traicay {
         position: absolute;
         right: 0;
         width: 100%;
@@ -274,7 +276,7 @@ border: 1px solid rgba(0, 0, 0, 0.10);
         top: inherit;
         display: none;
     }
-    .shop-detail-xanh-to {
+    .shop-detail-to {
         width: 255px;
         right: 10px;
         height: auto;

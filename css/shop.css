@@ -135,6 +135,7 @@ body {
 
 a {
     text-decoration: none;
+    display: block;
 }
 .shop-jucies {
     background-image: url(../images/shop-juices.png);
