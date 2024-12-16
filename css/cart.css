@@ -8,7 +8,20 @@ a {
     text-decoration: none;
     display: block;
 }
-
+.action-button {
+    /* Base styles */
+    background-color: #b1b2b2; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+  }
+  
+  .action-button:hover {
+    background-color: #3f3f3f; 
+  }
 .cart-for-you {
     color: #585858;
 

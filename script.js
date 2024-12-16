@@ -368,3 +368,90 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollContainer.scrollLeft = scrollLeft - walk;
   });
 });
+// Get all cart items
+const getCartItems = () => {
+  const items = [];
+  const cartItems = document.querySelectorAll('.cart-order > .d-flex:not(.justify-content-end)');
+  
+  cartItems.forEach(item => {
+      const priceElement = item.querySelector('.text-end .cart-for-you');
+      const quantityElement = item.querySelector('.cart-add[style="background-color: transparent"]');
+      
+      if (priceElement && quantityElement) {
+          const price = parseInt(priceElement.textContent.trim().replace(/\./g, ''));
+          const quantity = parseInt(quantityElement.textContent.trim());
+          items.push({
+              price: price,
+              quantity: quantity
+          });
+      }
+  });
+  
+  return items;
+};
+
+// Tính tổng
+const calculateTotal = () => {
+  const items = getCartItems();
+  let total = 0;
+  
+  // Tinh tổng bằng cách nhân số lượng
+  items.forEach(item => {
+      total += item.price * item.quantity;
+  });
+  
+  // Bỏ chấm
+  const formattedTotal = total.toLocaleString('vi-VN').replace(/,/g, '.');
+  
+  // (Tổng tiền hàng)
+  const subtotalElement = document.querySelector('.cart-order-sum .d-flex:nth-child(2) .value');
+  if (subtotalElement) {
+      subtotalElement.textContent = formattedTotal;
+  }
+  
+  // Sau khi trừ các khoản
+  const discount = parseInt(document.querySelector('.cart-order-sum .d-flex:nth-child(3) .value').textContent.replace(/\./g, '').replace(/-/, '')) || 0;
+  const shipping = parseInt(document.querySelector('.cart-order-sum .d-flex:nth-child(4) .value').textContent.replace(/\./g, '')) || 0;
+  
+  const finalTotal = total - discount + shipping;
+  const formattedFinalTotal = finalTotal.toLocaleString('vi-VN').replace(/,/g, '.');
+  
+  // (Tổng thanh toán)
+  const finalTotalElement = document.querySelector('.cart-order-sum .d-flex:last-child .value');
+  if (finalTotalElement) {
+      finalTotalElement.textContent = formattedFinalTotal;
+  }
+  
+  return total;
+};
+
+// Chỉnh sửa nếu thanh đổi số lượng
+const handleQuantityChange = (button) => {
+  const quantitySpan = button.parentElement.querySelector('[style="background-color: transparent"]');
+  let quantity = parseInt(quantitySpan.textContent);
+  
+  if (button.textContent === '+') {
+      quantity++;
+  } else if (button.textContent === '-' && quantity > 1) {
+      quantity--;
+  }
+  
+  quantitySpan.textContent = quantity;
+  calculateTotal();
+};
+
+// Add event listeners
+document.addEventListener('DOMContentLoaded', () => {
+  // Initial calculation
+  calculateTotal();
+  
+  // Add click handlers for quantity buttons
+  document.querySelectorAll('.cart-add').forEach(button => {
+      if (button.textContent === '+' || button.textContent === '-') {
+          button.addEventListener('click', () => handleQuantityChange(button));
+      }
+  });
+});
+
+// Log for debugging
+console.log('Cart Items:', getCartItems());
