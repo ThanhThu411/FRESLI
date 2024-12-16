@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRESLI</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="shop-detail.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img width="117" src="images/ic-logo.png" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <form class="d-flex align-items-center">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./shop.html"
+                    >OURJUICES</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link cart" aria-current="page" href="cart.html">
+                    CART(0) <img width="28" src="images/ic-cart.png" />
+                  </a>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <div class="banner-shop-detail-title">Giỏ hàng</div>
+        <div>
+          <div class="cart-row">
+            <div class="cart-left">
+              <div class="cart-for-you mt-3 mb-4">Đơn hàng của bạn</div>
+
+              <div class="cart-order">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <img width="65" height="65" src="./images/image 4.png" />
+                    <div class="ms-3">
+                      <div style="font-size: 16px" class="cart-for-you">
+                        Pure set
+                      </div>
+                      <div class="d-flex align-items-center mt-2">
+                        <span class="cart-add">-</span>
+                        <span
+                          class="cart-add"
+                          style="background-color: transparent"
+                          >1</span
+                        >
+                        <span class="cart-add">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <div style="font-size: 15px" class="cart-for-you">
+                      $65.00
+                    </div>
+                    <img
+                      class="mt-3"
+                      width="12px"
+                      src="./images/delete.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-4">
+                  <div class="d-flex">
+                    <img width="65" height="65" src="./images/image 4.png" />
+                    <div class="ms-3">
+                      <div style="font-size: 16px" class="cart-for-you">
+                        Glow Cream
+                      </div>
+                      <div class="d-flex align-items-center mt-2">
+                        <span class="cart-add">-</span>
+                        <span
+                          class="cart-add"
+                          style="background-color: transparent"
+                          >1</span
+                        >
+                        <span class="cart-add">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <div style="font-size: 15px" class="cart-for-you">
+                      $95.00
+                    </div>
+                    <img
+                      class="mt-3"
+                      width="12px"
+                      src="./images/delete.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                  <div class="cart-order-sum">
+                    <div class="title">Tổng đơn hàng</div>
+                    <div class="d-flex justify-content-between mt-4">
+                      <div class="label">Tổng tiền hàng</div>
+                      <div class="value">700.000</div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                      <div class="label">Giảm giá</div>
+                      <div class="value" style="color: #f33">-20.000</div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                      <div class="label">Phí vận chuyển</div>
+                      <div class="value">20.000</div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="apdunggiamgia row">
+                      <div class="col-md-6 p-1">
+                        <div class="apdunggiamgia-children">
+                          <div>Giảm 10K cho đơn hàng đầu tiên</div>
+                          <button>Áp dụng</button>
+                        </div>
+                      </div>
+                      <div class="col-md-6 p-1">
+                        <div class="apdunggiamgia-children">
+                          <div>Giảm 20% cho nhân dịp giáng sinh</div>
+                          <button>Áp dụng</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="magiamgia-row">
+                      <div class="magiamgia">
+                        <img width="24" src="./images/magiamgia.png" />
+                        Mã giảm giá
+                      </div>
+                      <button>Nhập</button>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                      <div class="label text-dark">Tổng thanh toán</div>
+                      <div class="value">700.000</div>
+                    </div>
+                    <button class="order-now mt-4">
+                      Đặt đơn
+                      <img width="24" src="./images/arrow-right.png" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="shop-water-combo mt-5" id="nuocep">
+                <div>
+                  <div class="shop-detail-title text-center">
+                    Có thể bạn sẽ thích
+                  </div>
+                  <div class="nuoceple-row">
+                    <div class="nuoceple-item">
+                      <div
+                        class="shop-shadow nuoceple-item-item text-center pb-3"
+                      >
+                        <img
+                          class="nuoceple-img"
+                          width="150"
+                          src="images/hong-to-1.png"
+                        />
+                        <div
+                          class="d-flex align-items-center justify-content-between px-3"
+                        >
+                          <div class="text-20">Red li</div>
+                          <div class="text-20">50.000</div>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between px-3"
+                        >
+                          <div class="text-12">
+                            Red 1 <br />
+                            Red 2 <br />
+                            Red 3
+                          </div>
+                          <div class="">
+                            <div class="d-flex justify-content-end mt-2 mb-2">
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                            </div>
+                            <div class="d-block text-end">
+                              <div class="sum">- 1 +</div>
+                              <div class="shop-cart ms-2">
+                                THÊM
+                                <img width="28" src="images/ic-cart-1.png" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nuoceple-item">
+                      <div
+                        class="shop-shadow nuoceple-item-item text-center pb-3"
+                      >
+                        <img
+                          class="nuoceple-img"
+                          width="150"
+                          src="images/hong-to-2.png"
+                        />
+                        <div
+                          class="d-flex align-items-center justify-content-between px-3"
+                        >
+                          <div class="text-20">Red li</div>
+                          <div class="text-20">50.000</div>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between px-3"
+                        >
+                          <div class="text-12">
+                            Red 1 <br />
+                            Red 2 <br />
+                            Red 3
+                          </div>
+                          <div class="">
+                            <div class="d-flex justify-content-end mt-2 mb-2">
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                            </div>
+                            <div class="d-block text-end">
+                              <div class="sum">- 1 +</div>
+                              <div class="shop-cart ms-2">
+                                THÊM
+                                <img width="28" src="images/ic-cart-1.png" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nuoceple-item">
+                      <div
+                        class="shop-shadow nuoceple-item-item text-center pb-3"
+                      >
+                        <img
+                          class="nuoceple-img"
+                          width="150"
+                          src="images/hong-to-3.png"
+                        />
+                        <div
+                          class="d-flex align-items-center justify-content-between px-3"
+                        >
+                          <div class="text-20">Red li</div>
+                          <div class="text-20">50.000</div>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between px-3"
+                        >
+                          <div class="text-12">
+                            Red 1 <br />
+                            Red 2 <br />
+                            Red 3
+                          </div>
+                          <div class="">
+                            <div class="d-flex justify-content-end mt-2 mb-2">
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                              <img class="" width="10" src="images/Star.png" />
+                            </div>
+                            <div class="d-block text-end">
+                              <div class="sum">- 1 +</div>
+                              <div class="shop-cart ms-2">
+                                THÊM
+                                <img width="28" src="images/ic-cart-1.png" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop-water-combo-border mt-5"></div>
+              </div>
+            </div>
+            <div class="cart-right">
+              <div class="text-center">
+                <img class="shipping-img" src="./images/shipping-1.svg" />
+              </div>
+
+              <div class="form-shipping">
+                <div class="title">Thông tin người nhận</div>
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <div class="label">Tên</div>
+                    <input />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="label">Họ</div>
+                    <input />
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-12">
+                    <div class="label">Email</div>
+                    <input />
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-12">
+                    <div class="label">Phone Number</div>
+                    <div class="d-flex">
+                      <select
+                        class="me-2"
+                        style="width: 75px"
+                        name="cars"
+                        id="cars"
+                      >
+                        <option value="volvo">+ 84</option>
+                        <option value="saab">+ 84</option>
+                        <option value="mercedes">+ 84</option>
+                        <option value="audi">+ 84</option>
+                      </select>
+                      <input />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-shipping">
+                <div class="title">Thông tin giao hàng</div>
+                <div class="row">
+                  <div class="col-md-12 mt-4">
+                    <div class="label">Số nhà , tên đường</div>
+                    <input />
+                  </div>
+                  <div class="col-md-12 mt-4">
+                    <div class="label">Địa chỉ</div>
+                    <input />
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-12">
+                    <div class="label">Loại địa chỉ</div>
+                    <div class="d-flex">
+                      <input
+                        class="ps-3"
+                        style="width: 126px; margin-right: 22px"
+                        placeholder="Nhà riêng"
+                      />
+                      <input
+                        class="ps-3"
+                        style="width: 126px"
+                        placeholder="Công ty"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="d-md-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <input class="checkDefault" type="checkbox" />
+                      Đặt làm địa chỉ mặc định
+                    </div>
+                    <a href="shipping1.html" class="continue cart-continue"
+                      >Tiếp tục</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-5">
+        <div class="shop-jucies">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="uudai">
+                nhận các ưu đãi <br />
+                sớm nhất
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+              <div class="txt shop-detail-dangky-input">
+                <input placeholder="Địa chỉ email" />
+                <div class="shop-detail-register">Đăng ký</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-5">
+      <div class="container">
+        <div class="title text-center">
+          100% Organic Detox Juice - Cold Pressed to Perfection - Juice
+          Cleanse<br />
+          100% Organic Detox Tea (Teatox) - Slimming, Tea Purify & Detox tea
+        </div>
+        <div class="row align-items-center mt-5 mb-5">
+          <div class="col-md-4 img-center">
+            <img width="60%" src="images/Intersect.png" />
+            <img width="60%" src="images/logo full.png" />
+          </div>
+          <div class="col-md-4 col-6">
+            <p class="text-center"><b>ADDRESS</b></p>
+            <p class="text-center">
+              279 Nguyễn Tri Phương, <br />Phường 5, Quận 10, Thành <br />phố Hồ
+              Chí Minh
+            </p>
+          </div>
+          <div class="col-md-4 col-6">
+            <p class="text-center"><b>CONTACT</b></p>
+            <p class="text-center">fresli.com.vn</p>
+            <p class="text-center">
+              Registered with companies <br />
+              house: 05846026
+            </p>
+            <p class="text-center">
+              Registered with companies <br />
+              house: 05846026
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

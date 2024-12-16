@@ -1,0 +1,308 @@
+.shop-jucies {
+    height: 200px;
+    justify-content: normal;
+    padding: 0 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(260deg, rgba(0, 0, 0, 0.00) 26.13%, rgba(0, 0, 0, 0.70) 77.57%), url(../images/shop-juices.png) lightgray 50% / cover no-repeat;
+
+}
+.uudai {
+    color: #E1EF97;
+
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.shop-detail-register {
+    border-radius: 40px;
+background: #E1EF97;
+padding: 12px 84px;
+color: #2E4C18;
+
+text-align: center;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 15px;
+}
+.shop-jucies .txt {
+    width: 100%;
+    padding: 24px 107px;
+    display: block;
+    height: auto;
+    font-size: 0;
+}
+.shop-detail-dangky-input input {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+border: 1px solid #2E4C18;
+background: rgba(255, 255, 255, 0.80);
+font-size: 16px;
+color: rgba(0, 0, 0, 0.40);
+padding: 0 15px;
+}
+
+.nuoceple-row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.shop-detail-title {
+    font-size: 48px;
+    color: #2E4C18;
+    font-weight: 900;
+}
+
+.shop-detail-banner {
+    background: linear-gradient(84deg, rgba(225, 239, 151, 0.20) 3.36%, rgba(225, 239, 151, 0.00) 96.64%), linear-gradient(29deg, rgba(46, 76, 24, 0.00) 44.95%, #2E4C18 86.09%), #FFF8E3;
+    height: 700px;
+}
+
+.banner-row {
+    display: grid;
+    grid-template-columns: 1fr 513px;
+}
+
+.banner-detail {
+    box-shadow: 0px 4px 60px #FFF;
+    height: 700px; /* Chiều cao cố định */
+    background: #ffffffb4;
+    overflow: auto; /* Ẩn nội dung vượt ra ngoài */
+    position: relative;
+}
+
+.banner-detail::-webkit-scrollbar {
+    display: none; /* Chrome, Safari và Edge */
+}
+
+.banner-detail img {
+    width: 100%; /* Đảm bảo ảnh lấp đầy chiều ngang */
+    height: auto; /* Lấp đầy chiều dọc thẻ cha */
+    position: absolute;
+    top: 0;
+}
+
+.banner-shop-detail-title {
+    color: #2E4C18;
+
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+}
+.banner-shop-detail-txt {
+    color: #2E4C18;
+
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.pineapple {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    z-index: 1;
+}
+
+.pineapple {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
+    height: 485px;
+    width: 485px;
+}
+.shop-detail-xanh-to {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: 1;
+    width: 317px;
+    height: 488px;
+}
+
+.shop-detail-review {
+    color: #2E4C18;
+
+text-align: center;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding: 24px 0;
+border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+text-align: center;
+margin-bottom: 36px;
+}
+
+.all-comment {
+    color: #2E4C18;
+
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.shop-detail-select {
+    border-radius: 30px;
+border: 1px solid #000;
+height: 45px;
+width: 232px;
+background-color: transparent;
+padding: 0 10px;
+margin: 0 8px;
+box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.10);
+}
+
+.vietdanhgia {
+    border-radius: 40px;
+background: #2E4C18;
+width: 189px;
+height: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 18px;
+font-weight: 700;
+color: #fff;
+}
+
+.shop-detail-box {
+    border-radius: 20px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+background: #FFF;
+padding: 28px 32px;
+}
+
+.shop-detail-box .title{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 15px;
+}
+.shop-detail-box .txt{
+    color: rgba(0, 0, 0, 0.60);
+
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+margin-top: 12px;
+margin-bottom: 24px;
+}
+.shop-detail-box .time{
+    color: rgba(0, 0, 0, 0.60);
+
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+}
+.load-more {
+    display: flex;
+width: 230px;
+height: 52px;
+justify-content: center;
+align-items: center;
+gap: 12px;
+flex-shrink: 0;
+color: #000;
+margin: auto;
+margin-top: 44px;
+margin-bottom: 53px;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 62px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+@media screen and (max-width: 991px) {
+    .banner-detail {
+        display: none;
+    }
+    .banner-info {
+        height: 666px;
+    }
+    .shop-detail-banner {
+        height: auto;
+    }
+    .banner-shop-detail-txt {
+        margin: 50px 0;
+    }
+    .banner-row {
+        display: block;
+    }
+    .nuoceple-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nuoceple-row {
+        grid-template-columns: 1fr;
+    }
+    .uudai {
+        font-size: 20px;
+    }
+    .pineapple {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: auto;
+        top: 255px;
+        top: inherit;
+    }
+    .shop-detail-xanh-to {
+        width: 70%;
+        right: 0;
+        height: auto;
+        top: 215px;
+        top: inherit;
+    }
+    .banner-info {
+        margin-top: 0 !important;
+        padding-top: 30px;
+    }
+    .all-comment {
+        margin-bottom: 15px;
+    }
+    .vietdanhgia {
+        margin-top: 15px;
+    }
+    .shop-jucies {
+        padding: 10px;
+        text-align: center;
+        height: 300px;
+    }
+    .shop-jucies .txt {
+        padding: 24px 10px;
+        margin-top: 15px;
+    }
+    .shop-water-combo-border {
+        margin-top: 0 !important;
+    }
+    .shop-detail-title {
+        font-size: 30px;
+    }
+}
