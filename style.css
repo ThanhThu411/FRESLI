@@ -166,7 +166,16 @@ header {
    
 }
 
-
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+      position: relative;
+      z-index: 99;
+    }
+    
+    .nav-link {
+      display: inline-block;
+    }
+  }
 
 .buynow {
     font-size: 18px;

@@ -313,6 +313,18 @@ line-height: normal;
 text-transform: uppercase;
 width: 50px;
 }
+
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+      position: relative;
+      z-index: 99;
+    }
+    
+    .nav-link {
+      display: inline-block;
+    }
+  }
+
 @media screen and (min-width: 1200px) {
     .container {
         width: 1440px;
