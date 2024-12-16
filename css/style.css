@@ -49,6 +49,37 @@ body {
     height: 631px;
     gap: 20px;
 }
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.buynow {
+    font-size: 18px;
+    font-weight: bold;
+    width: 189px;
+    height: 57px;
+    color: #fff;
+    background-color: #2E4C18;
+    border-radius: 40px;
+    padding: 15px 20px;
+    text-align: center;
+    
+}
+.learnmore {
+    font-size: 18px;
+    font-weight: bold;
+    width: 189px;
+    height: 57px;
+    color: #2E4C18;
+    border: 4px solid #2E4C18 ;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0 0 0 24px;
+    background-color: transparent;
+    border-radius: 40px;
+   
+}
 
 .img-banner-1 {
     width: 146px;
@@ -170,25 +201,6 @@ body {
 
 
 
-.buynow {
-    font-size: 18px;
-    font-weight: bold;
-    width: 189px;
-    height: 57px;
-    color: #fff;
-    background-color: #2E4C18;
-    border-radius: 40px;
-}
-.learnmore {
-    font-size: 18px;
-    font-weight: bold;
-    width: 189px;
-    height: 57px;
-    color: #2E4C18;
-    background-color: transparent;
-    border-radius: 40px;
-    border: 3px solid 2E4C18;
-}
 
 .bg-primary-default {
     background-color: #FFF8E3;
@@ -738,6 +750,15 @@ footer {
     .banner-img-desktop {
         display: none;
     }
+    .buynow {
+        font-size: 14px;
+
+    }
+    .learnmore{
+       font-size: 14px;
+       margin: 0 0 0 10px;
+    }
+
     .banner-img-mobile {
         display: block;
     }
@@ -831,6 +852,13 @@ footer {
     .yellow-row .section-title {
         margin-right: -220px;
         position: relative;
+    }
+    .buynow {
+        font-size: 14px;
+
+    }
+    .learnmore{
+       display: none;
     }
 
     .yl-title-text, .rl-title-text, .gr-title-text {

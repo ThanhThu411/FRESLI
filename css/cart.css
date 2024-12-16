@@ -4,6 +4,11 @@
     gap: 91px;
 }
 
+a {
+    text-decoration: none;
+    display: block;
+}
+
 .cart-for-you {
     color: #585858;
 
