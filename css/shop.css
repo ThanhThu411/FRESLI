@@ -133,6 +133,9 @@ body {
     top: 0;
 }
 
+a {
+    text-decoration: none;
+}
 .shop-jucies {
     background-image: url(../images/shop-juices.png);
     height: 165px;
