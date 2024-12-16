@@ -17,13 +17,13 @@ function handleYellow(name) {
 
   switch (name) {
     case "yl1":
-      newImg.src = "images/vang-to-1.png";
+      newImg.src = "../images/vang-to-1.png";
       break;
     case "yl2":
-      newImg.src = "images/vang-to-2.png";
+      newImg.src = "../images/vang-to-2.png";
       break;
     case "yl3":
-      newImg.src = "images/vang-to-3.png";
+      newImg.src = "../images/vang-to-3.png";
       break;
     default:
       console.warn("Invalid name:", name);
@@ -32,31 +32,31 @@ function handleYellow(name) {
 
   const data = {
     yl1: {
-      src: "images/vang-to-1.png",
-      numberSrc: "images/yl-01.png",
-      nlSrc1: "images/taoxanh.png",
-      nlSrc2: "images/chanh.png",
-      nlSrc3: "images/chanh.png",
+      src: "../images/vang-to-1.png",
+      numberSrc: "../images/yl-01.png",
+      nlSrc1: "../images/taoxanh.png",
+      nlSrc2: "../images/chanh.png",
+      nlSrc3: "../images/chanh.png",
       title: "YELLOW 1",
       bg: "#FAC010",
       price: "45.000",
     },
     yl2: {
-      src: "images/vang-to-2.png",
-      numberSrc: "images/yl-02.png",
-      nlSrc1: "images/xoai.png",
-      nlSrc2: "images/chanh.png",
-      nlSrc3: "images/chanh.png",
+      src: "../images/vang-to-2.png",
+      numberSrc: "../images/yl-02.png",
+      nlSrc1: "../images/xoai.png",
+      nlSrc2: "../images/chanh.png",
+      nlSrc3: "../images/chanh.png",
       title: "YELLOW 2",
       bg: "#FA7D10",
       price: "50.000",
     },
     yl3: {
-      src: "images/vang-to-3.png",
-      numberSrc: "images/yl-03.png",
-      nlSrc1: "images/chanh.png",
-      nlSrc2: "images/nghe.png",
-      nlSrc3: "images/chanh.png",
+      src: "../images/vang-to-3.png",
+      numberSrc: "../images/yl-03.png",
+      nlSrc1: "../images/chanh.png",
+      nlSrc2: "../images/nghe.png",
+      nlSrc3: "../images/chanh.png",
       title: "YELLOW 3",
       bg: "#FFBE44",
       price: "55.000",
@@ -101,13 +101,13 @@ function handlePink(name) {
 
   switch (name) {
     case "pink1":
-      newImg.src = "images/hong-to-1.png";
+      newImg.src = "../images/hong-to-1.png";
       break;
     case "pink2":
-      newImg.src = "images/hong-to-2.png";
+      newImg.src = "../images/hong-to-2.png";
       break;
     case "pink3":
-      newImg.src = "images/hong-to-3.png";
+      newImg.src = "../images/hong-to-3.png";
       break;
     default:
       console.warn("Invalid name:", name);
@@ -116,31 +116,31 @@ function handlePink(name) {
 
   const data = {
     pink1: {
-      src: "images/hong-to-1.png",
-      numberSrc: "images/red-01.png",
-      nlSrc1: "images/buoihong.png",
-      nlSrc2: "images/nhadam.png",
-      nlSrc3: "images/bacha.png",
+      src: "../images/hong-to-1.png",
+      numberSrc: "../images/red-01.png",
+      nlSrc1: "../images/buoihong.png",
+      nlSrc2: "../images/nhadam.png",
+      nlSrc3: "../images/bacha.png",
       title: "RED 1",
       bg: "#F79F9F",
       price: "45.000",
     },
     pink2: {
-      src: "images/hong-to-2.png",
-      numberSrc: "images/red-02.png",
-      nlSrc1: "images/dau.png",
-      nlSrc2: "images/chanh.png",
-      nlSrc3: "images/hungque.png",
+      src: "../images/hong-to-2.png",
+      numberSrc: "../images/red-02.png",
+      nlSrc1: "../images/dau.png",
+      nlSrc2: "../images/chanh.png",
+      nlSrc3: "../images/hungque.png",
       title: "RED 2",
       bg: "#EA6C6C",
       price: "50.000",
     },
     pink3: {
-      src: "images/hong-to-3.png",
-      numberSrc: "images/red-03.png",
-      nlSrc1: "images/apple.png",
-      nlSrc2: "images/nghe.png",
-      nlSrc3: "images/gung.png",
+      src: "../images/hong-to-3.png",
+      numberSrc: "../images/red-03.png",
+      nlSrc1: "../images/apple.png",
+      nlSrc2: "../images/nghe.png",
+      nlSrc3: "../images/gung.png",
       title: "RED 3",
       bg: "#E35353",
       price: "55.000",
@@ -185,13 +185,13 @@ function handleGreen(name) {
 
   switch (name) {
     case "green1":
-      newImg.src = "images/xanh-to-1.png";
+      newImg.src = "../images/xanh-to-1.png";
       break;
     case "green2":
-      newImg.src = "images/xanh-to-2.png";
+      newImg.src = "../images/xanh-to-2.png";
       break;
     case "green3":
-      newImg.src = "images/xanh-to-3.png";
+      newImg.src = "../images/xanh-to-3.png";
       break;
     default:
       console.warn("Invalid name:", name);
@@ -203,31 +203,31 @@ function handleGreen(name) {
 
   const data = {
     green1: {
-      src: "images/xanh-to-1.png",
-      numberSrc: "images/green-01.png",
-      nlSrc1: "images/dua.png",
-      nlSrc2: "images/duachuot.png",
-      nlSrc3: "images/bacha.png",
+      src: "../images/xanh-to-1.png",
+      numberSrc: "../images/green-01.png",
+      nlSrc1: "../images/dua.png",
+      nlSrc2: "../images/duachuot.png",
+      nlSrc3: "../images/bacha.png",
       title: "RED 1",
       bg: "#489932",
       price: "45.000",
     },
     green2: {
-      src: "images/xanh-to-2.png",
-      numberSrc: "images/green-02.png",
-      nlSrc1: "images/taoxanh.png",
-      nlSrc2: "images/duachuot.png",
-      nlSrc3: "images/hungque.png",
+      src: "../images/xanh-to-2.png",
+      numberSrc: "../images/green-02.png",
+      nlSrc1: "../images/taoxanh.png",
+      nlSrc2: "../images/duachuot.png",
+      nlSrc3: "../images/hungque.png",
       title: "RED 2",
       bg: "#7BD063",
       price: "50.000",
     },
     green3: {
-      src: "images/xanh-to-3.png",
-      numberSrc: "images/green-03.png",
-      nlSrc1: "images/cantay.png",
-      nlSrc2: "images/chanh.png",
-      nlSrc3: "images/gung.png",
+      src: "../images/xanh-to-3.png",
+      numberSrc: "../images/green-03.png",
+      nlSrc1: "../images/cantay.png",
+      nlSrc2: "../images/chanh.png",
+      nlSrc3: "../images/gung.png",
       title: "RED 3",
       bg: "#358C1D",
       price: "55.000",
