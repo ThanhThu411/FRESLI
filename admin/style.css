@@ -38,6 +38,10 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.18px;
 }
+.snkd {
+  max-height: 600px;
+  overflow: auto;
+}
 .navbar {
   padding: 13px 10px;
   background: linear-gradient(180deg, #E1EF97 0%, #FFF 138.09%);

@@ -48,7 +48,7 @@
       <!-- Sidebar Holder -->
       <nav id="sidebar" class="">
         <div class="sidebar-header" id="sidebar-title">
-          <h3 class="text-center"><img width="100" src="./image 1.png"/></h3>
+          <h3 class="text-center"><img width="100" src="./image 1.png" /></h3>
           <strong><i class="bi bi-list"></i></strong>
         </div>
 
@@ -97,29 +97,53 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Trang chủ</a>
-            <button class="btn btn-danger"><a href="../admin.html">Đăng xuất</a></button>
+            <button class="btn btn-danger">
+              <a href="../admin.html">Đăng xuất</a>
+            </button>
           </div>
         </nav>
-        <div class="container">
+        <div class="container-fluid">
           <div class="doanhthu">
-              <div class="card shadow p-3">
-                  <h5>Số đơn đặt</h5>
-                  <p>100</p>
-              </div>
-              <div class="card shadow p-3">
-                  <h5>Doanh thu</h5>
-                  <p>30000$</p>
-              </div>
-              <div class="card shadow p-3">
-                  <h5>Lượng truy cập</h5>
-                  <p>50</p>
-              </div>
+            <div class="card shadow p-3">
+              <h5>Số đơn đặt</h5>
+              <p>100</p>
+            </div>
+            <div class="card shadow p-3">
+              <h5>Doanh thu</h5>
+              <p>30000$</p>
+            </div>
+            <div class="card shadow p-3">
+              <h5>Lượng truy cập</h5>
+              <p>50</p>
+            </div>
           </div>
-          <div class="card shadow mt-4 mb-4 p-3">
-              <h5>Biểu đồ</h5>
-              <canvas id="salesChart" width="400" height="200"></canvas>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="card shadow mt-4 mb-4 p-3">
+                <h5>Biểu đồ</h5>
+                <canvas id="salesChart" width="400" height="200"></canvas>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="card shadow p-3 mt-4 mb-4 snkd">
+                <h5>Số phẩm kinh doanh</h5>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">SKU</th>
+                      <th scope="col">Ảnh</th>
+                      <th scope="col">Tên SP</th>
+                      <th scope="col">Giá</th>
+                      <th scope="col">Ngày thêm</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody"></tbody>
+                </table>
+              </div>
+            </div>
           </div>
-      </div>
+          <div></div>
+        </div>
       </div>
     </div>
 
@@ -131,36 +155,42 @@
     ></script>
     <script></script>
     <script src="./script/storage.js"></script>
-    <script src="./script.js"></script>
+    <script src="./index.js"></script>
 
     <script>
-        // Dữ liệu mẫu cho biểu đồ
-        const salesData = {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-            datasets: [{
-                label: 'Sales',
-                data: [1000, 1500, 1200, 1800, 2000, 1700],
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
-            }]
-        };
-    
-        // Lấy thẻ canvas và vẽ biểu đồ doanh số
-        const salesChartCanvas = document.getElementById('salesChart').getContext('2d');
-        const salesChart = new Chart(salesChartCanvas, {
-            type: 'line',
-            data: salesData,
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
+      // Dữ liệu mẫu cho biểu đồ
+      const salesData = {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [
+          {
+            label: "Sales",
+            data: [1000, 1500, 1200, 1800, 2000, 1700],
+            backgroundColor: "rgba(54, 162, 235, 0.2)",
+            borderColor: "rgba(54, 162, 235, 1)",
+            borderWidth: 1,
+          },
+        ],
+      };
+
+      // Lấy thẻ canvas và vẽ biểu đồ doanh số
+      const salesChartCanvas = document
+        .getElementById("salesChart")
+        .getContext("2d");
+      const salesChart = new Chart(salesChartCanvas, {
+        type: "line",
+        data: salesData,
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+        },
+      });
     </script>
   </body>
 </html>
