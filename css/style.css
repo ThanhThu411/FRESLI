@@ -533,6 +533,158 @@ a {
     text-transform: uppercase;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .voucher-container {
+    background: linear-gradient(to bottom, #84a13f, #e8f3d6);
+    max-width: 500px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .title {
+    color: #27511f;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .voucher-text {
+    color: #27511f;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .subtitle {
+    color: #4a4a4a;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .email-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px 15px 45px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: white url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>') no-repeat 15px center;
+  }
+
+  .submit-btn {
+    background-color: #27511f;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+  }
+
+  .submit-btn:hover {
+    background-color: #1e3d17;
+  }
+
+  .skip-btn {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .skip-btn:hover {
+    text-decoration: underline;
+  }
+
+  .bottle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+    margin-top: 40px;
+    max-width: 120px;
+  }
+  
+  .bottle {
+    width: 80px;
+    height: 120px;
+    margin: 30px -10px;
+  }
+
+  .bottle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  
+/* Styles for the voucher popup */
+.voucher-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+.voucher-container {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    animation: slideDown 0.5s ease-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #e0e0e0;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hide popup by default */
+.voucher-overlay.hidden {
+    display: none;
+}
 
 .bg-love p {
     font-size: 24px;

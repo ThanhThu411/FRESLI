@@ -390,6 +390,55 @@ const getCartItems = () => {
   return items;
 };
 
+ /// JavaScript for handling the voucher popup
+document.addEventListener('DOMContentLoaded', function() {
+  // Get elements
+  const voucherOverlay = document.getElementById('voucherOverlay');
+  const skipButton = document.querySelector('.skip-btn'); // Updated selector to match skip-btn class
+  
+  // Function to show popup
+  function showPopup() {
+      voucherOverlay.classList.remove('hidden');
+  }
+  
+  // Function to hide popup
+  function hidePopup() {
+      voucherOverlay.classList.add('hidden');
+      // Also add display: none to ensure it's hidden
+      voucherOverlay.style.display = 'none';
+  }
+  
+  // Close popup when clicking the skip button
+  if (skipButton) {
+      skipButton.addEventListener('click', hidePopup);
+      console.log('Skip button found and event listener added');
+  } else {
+      console.log('Skip button not found');
+  }
+  
+  // Close popup when clicking outside the voucher container
+  voucherOverlay.addEventListener('click', function(e) {
+      if (e.target === voucherOverlay) {
+          hidePopup();
+      }
+  });
+  
+  // Show popup immediately when page loads
+  showPopup();
+  
+  // Log for debugging
+  console.log('Popup script initialized');
+});
+
+// Alternative approach using direct onclick handler
+document.querySelector('.skip-btn')?.addEventListener('click', function() {
+  const overlay = document.getElementById('voucherOverlay');
+  if (overlay) {
+      overlay.style.display = 'none';
+  }
+  console.log('Skip button clicked');
+});
+
 // Tính tổng
 const calculateTotal = () => {
   const items = getCartItems();
