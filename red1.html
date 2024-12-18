@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script> src="script"</script>
+    <script> src="script.js"</script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/shop.css" />
     <link rel="stylesheet" href="./css/shop-detail.css" />
@@ -62,23 +62,7 @@
         </div>
       </nav>
     </header>
-    <div class="rating-overlay" id="ratingOverlay">
-      <div class="rating-container">
-          <h3>Đánh giá của bạn</h3>
-          <div class="stars">
-              <span class="star" data-rating="1">☆</span>
-              <span class="star" data-rating="2">☆</span>
-              <span class="star" data-rating="3">☆</span>
-              <span class="star" data-rating="4">☆</span>
-              <span class="star" data-rating="5">☆</span>
-          </div>
-          <textarea placeholder="Review:" rows="6"></textarea>
-          <div class="button-group">
-              <button class="cancel-btn">Hủy</button>
-              <button class="submit-btn">Gửi</button>
-          </div>
-      </div>
-  </div>
+    
     <main>
       <section>
         <div class="shop-detail-banner">
@@ -137,171 +121,178 @@
       </section>
       <section>
         <div class="container">
-          <div class="shop-detail-review">Đánh giá & Bình luận</div>
-          <div class="d-md-flex align-items-center justify-content-between">
-            <div class="all-comment">
-              Tất cả bình luận
-              <span style="font-size: 14px; padding-left: 8px">(45)</span>
+          <div class="review-header">
+            <div>
+              <h2 class="review-title">Đánh giá & Bình luận<span class="review-count">(45)</span></h2>
             </div>
-            <div class="d-md-flex">
-              <img width="49" src="../images/sort.png" />
-              <select class="shop-detail-select" name="cars" id="cars">
-                <option value="volvo">Đánh giá mới nhất</option>
-                <option value="saab">Đánh giá cao nhất</option>
+            <div class="review-controls">
+              <select class="sort-select">
+                <option>Đánh giá mới nhất</option>
+                <option>Đánh giá cao nhất</option>
               </select>
-              <div class="vietdanhgia">Viết đánh giá</div>
+              <button class="write-review-btn" onclick="openModal()">Viết đánh giá</button>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 mt-4">
-              <div class="shop-detail-box">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="d-flex">
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img" width="15" src="../images/shop-detail-start-vang.png"/>
-                  </div>
-                  <img width="24" src="../images/dot.png" />
+      
+          <div class="reviews-grid">
+            <div class="review-card">
+              <div class="review-header-card">
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
                 </div>
-                <div class="title">
-                  My Trương <img width="24" src="../images/checked.png" />
-                </div>
-                <div class="txt">
-                  "Tôi đã thử nước ép dứa và thật sự rất thích! Hương vị tươi mát, ngọt ngào và không quá gắt. Đây chắc chắn sẽ là món yêu thích của tôi trong mùa hè này!"
-                </div>
-                <div class="time">Posted on August 14, 2023</div>
+                <div class="review-options">•••</div>
               </div>
+              <div class="reviewer">
+                <span class="reviewer-name">My Trương</span>
+                <svg class="verified-badge" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="review-text">
+                "Tôi đã thử nước ép dứa và thật sự rất thích! Hương vị tươi mát, ngọt ngào và không quá gắt. Đây chắc chắn sẽ là món yêu thích của tôi trong mùa hè này!"
+              </div>
+              <div class="review-date">Posted on August 14, 2023</div>
             </div>
-            <div class="col-md-6 mt-4">
-              <div class="shop-detail-box">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="d-flex">
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img" width="15" src="../images/shop-detail-start-vang.png"/>
-                  </div>
-                  <img width="24" src="../images/dot.png" />
+            <div class="review-card">
+              <div class="review-header-card">
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
                 </div>
-                <div class="title">
-                  Huy Vo <img width="24" src="../images/checked.png" />
-                </div>
-                <div class="txt">
-                  "Nước ép hỗn hợp trái cây rất thơm ngon, nhưng tôi mong muốn nó có thêm chút độ ngọt hơn. Dù sao thì đây cũng là một lựa chọn tốt cho sức khỏe của tôi!"
-                </div>
-                <div class="time">Posted on August 14, 2023</div>
+                <div class="review-options">•••</div>
               </div>
+              <div class="reviewer">
+                <span class="reviewer-name">Huy Vo</span>
+                <svg class="verified-badge" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="review-text">
+                "Tôi đã thử nước ép dứa và thật sự rất thích! Hương vị tươi mát, ngọt ngào và không quá gắt. Đây chắc chắn sẽ là món yêu thích của tôi trong mùa hè này!"
+              </div>
+              <div class="review-date">Posted on August 14, 2023</div>
             </div>
-            <div class="col-md-6 mt-4">
-              <div class="shop-detail-box">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="d-flex">
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img" width="15" src="../images/shop-detail-start-vang.png"/>
-                  </div>
-                  <img width="24" src="../images/dot.png" />
+            <div class="review-card">
+              <div class="review-header-card">
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
                 </div>
-                <div class="title">
-                  HIEUTHUHAI <img width="24" src="../images/checked.png" />
-                </div>
-                <div class="txt">
-                  "Sản phẩm nước ép cam này thật tuyệt vời! Nó không chỉ giúp tôi cảm thấy sảng khoái mà còn cung cấp vitamin C cần thiết cho cơ thể. Tôi sẽ mua lại chắc chắn!"
-                </div>
-                <div class="time">Posted on August 14, 2023</div>
+                <div class="review-options">•••</div>
               </div>
+              <div class="reviewer">
+                <span class="reviewer-name">Phan Anh Quan</span>
+                <svg class="verified-badge" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="review-text">
+                "Tôi đã thử nước ép dứa và thật sự rất thích! Hương vị tươi mát, ngọt ngào và không quá gắt. Đây chắc chắn sẽ là món yêu thích của tôi trong mùa hè này!"
+              </div>
+              <div class="review-date">Posted on August 14, 2023</div>
             </div>
-            <div class="col-md-6 mt-4">
-              <div class="shop-detail-box">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="d-flex">
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img
-                      class="me-1"
-                      width="15"
-                      src="../images/shop-detail-start-vang.png"
-                    />
-                    <img" width="15" src="../images/shop-detail-start-vang.png"/>
-                  </div>
-                  <img width="24" src="../images/dot.png" />
+            <div class="review-card">
+              <div class="review-header-card">
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
                 </div>
-                <div class="title">
-                  Phạm Anh Quân <img width="24" src="../images/checked.png" />
-                </div>
-                <div class="txt">
-                  "Nước ép táo rất ngon và tự nhiên. Tôi cảm nhận được vị ngọt thanh khiết mà không hề có chất bảo quản. Rất đáng để thử nếu bạn yêu thích nước ép trái cây!"
-                </div>
-                <div class="time">Posted on August 14, 2023</div>
+                <div class="review-options">•••</div>
               </div>
-            
-          <div class="load-more">Load More Reviews</div>
+              <div class="reviewer">
+                <span class="reviewer-name">Anh Phan</span>
+                <svg class="verified-badge" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="review-text">
+                "Tôi đã thử nước ép dứa và thật sự rất thích! Hương vị tươi mát, ngọt ngào và không quá gắt. Đây chắc chắn sẽ là món yêu thích của tôi trong mùa hè này!"
+              </div>
+              <div class="review-date">Posted on August 14, 2023</div>
+            </div>
+            <div class="review-card">
+              <div class="review-header-card">
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <div class="review-options">•••</div>
+              </div>
+              <div class="reviewer">
+                <span class="reviewer-name">My Trương</span>
+                <svg class="verified-badge" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="review-text">
+                "Tôi đã thử nước ép dứa và thật sự rất thích! Hương vị tươi mát, ngọt ngào và không quá gắt. Đây chắc chắn sẽ là món yêu thích của tôi trong mùa hè này!"
+              </div>
+              <div class="review-date">Posted on August 14, 2023</div>
+            </div>
+            <div class="review-card">
+              <div class="review-header-card">
+                <div class="stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <div class="review-options">•••</div>
+              </div>
+              <div class="reviewer">
+                <span class="reviewer-name">My Trương</span>
+                <svg class="verified-badge" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+              </div>
+              <div class="review-text">
+                "Tôi đã thử nước ép dứa và thật sự rất thích! Hương vị tươi mát, ngọt ngào và không quá gắt. Đây chắc chắn sẽ là món yêu thích của tôi trong mùa hè này!"
+              </div>
+              <div class="review-date">Posted on August 14, 2023</div>
+            </div>
+      
+            <!-- Repeat similar review-card structures for other reviews -->
+            <!-- More review cards... -->
+      
+          </div>
+      
+          <div class="load-more">
+            <button class="load-more-btn">Xem thêm đánh giá</button>
+          </div>
+        </div>
+      
+        <!-- Review Modal -->
+        <div class="modal" id="reviewModal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 class="modal-title">Đánh giá sản phẩm</h3>
+            <div class="rating-stars">
+              <span class="rating-star" onclick="rate(1)">★</span>
+              <span class="rating-star" onclick="rate(2)">★</span>
+              <span class="rating-star" onclick="rate(3)">★</span>
+              <span class="rating-star" onclick="rate(4)">★</span>
+              <span class="rating-star" onclick="rate(5)">★</span>
+            </div>
+            <textarea class="review-textarea" placeholder="Chia sẻ cảm nhận của bạn..."></textarea>
+            <button class="submit-review">Gửi đánh giá</button>
+          </div>
         </div>
       </section>
       <section>
@@ -522,5 +513,29 @@
         </div>
       </div>
     </footer>
+    <script>
+      function openModal() {
+        document.getElementById('reviewModal').style.display = 'block';
+      }
+  
+      function closeModal() {
+        document.getElementById('reviewModal').style.display = 'none';
+      }
+  
+      function rate(stars) {
+        const starElements = document.querySelectorAll('.rating-star');
+        starElements.forEach((star, index) => {
+          star.style.color = index < stars ? '#FFD700' : '#ddd';
+        });
+      }
+  
+      // Close modal when clicking outside
+      window.onclick = function(event) {
+        const modal = document.getElementById('reviewModal');
+        if (event.target == modal) {
+          closeModal();
+        }
+      }
+    </script>
   </body>
 </html>
